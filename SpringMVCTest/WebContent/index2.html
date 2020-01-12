@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>index2</title>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous">
+</script>
+</head>
+<body>
+<script>
+ $.post("/SpringMVCTest/login1.do",function(result){
+  	alert(result);
+  	alert("done by Jquery");
+  	}, {
+  		"userName":"Chetan",
+ 		"userPassword":"chet123"
+  });
+</script>
+
+</body>
+</html>
